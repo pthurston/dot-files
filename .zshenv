@@ -10,3 +10,4 @@ export ASDF_DIR=$HOME/.local/asdf
 export ASDF_DATA_DIR=$XDG_DATA_HOME/asdf
 
 [ -f $HOME/.variables ] && source $HOME/.variables
+alias assume=". assume"

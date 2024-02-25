@@ -14,6 +14,8 @@ brew "defaultbrowser"
 brew "granted"
 
 brew "podman"
+brew "terraform"
+brew "terragrunt"
 brew "postgresql@15"
 brew "pgcli"
 
@@ -26,4 +28,5 @@ brew "pgcli"
 
 cask "firefox"
 cask "rectangle"
+cask "tableplus"
 cask "visual-studio-code"
