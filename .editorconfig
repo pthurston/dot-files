@@ -7,6 +7,13 @@ indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+max_line_length = 100
 
 [*.py]
 indent_size = 4
+
+[*.cs]
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false

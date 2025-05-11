@@ -1,0 +1,131 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$fill\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$character"""
+
+[aws]
+format = '[$symbol($profile )(\($region\) )]($style)'
+style = 'bold yellow'
+symbol = '🅰 '
+
+[rust]
+format='[$symbol($version )]($style)'
+
+[[battery.display]]
+threshold = 100
+style = 'bold green'
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
+
+[[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
+threshold = 30
+style = 'bold red'
+
+[memory_usage]
+disabled = false
+
+[status]
+symbol = '🔴 '
+success_symbol = '🟢'
+format = '[$symbol $common_meaning$signal_name$maybe_int]($style) '
+map_symbol = true
+disabled = false
+
+[fill]
+style = 'dimmed white'
